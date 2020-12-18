@@ -1,2 +1,2 @@
 # coffeebean_clone_coding
-깃허브 저장소 생성 테스트입니다.
+커피빈 클론 
