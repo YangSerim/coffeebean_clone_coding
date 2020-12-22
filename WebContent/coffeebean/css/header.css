@@ -26,6 +26,8 @@ a {
     font-family: "NanumBarunGothicBold", "Helvetica";
 }
 
+/*=====================================================*/
+
 /** 상단바 메뉴 **/
 
 /*상단바 메뉴 오른쪽 정렬*/
@@ -87,6 +89,8 @@ a {
     padding: 0 20px;
 }
 
+/*=====================================================*/
+
 /** 메인 메뉴 **/
 
 #header_main_menu {
@@ -96,9 +100,11 @@ a {
     margin: 0;
     background-color: white;
     position: relative;
+    z-index: 10;
     /*text-align: center;*/
 }
 
+/* 로고 */
 .logo {
     width: 25%;
     height: 100px;
@@ -119,6 +125,9 @@ a {
     text-indent: -10000px;
 }
 
+/*-----------------------------------------------------------*/
+
+/* 검색 */
 .search {
     width: 25%;
     height: 100px;
@@ -128,14 +137,11 @@ a {
     bottom: 0;
 }
 
-/*
- * 돋보기색 - 207/102/26 = #cf661a
-*/
 .search>a {
     display: inline-block;
     width: 32px;
     height: 32px;
-    background: url("../img/header_search.png") no-repeat;
+    background: url("../img/header_search1.png") no-repeat;
     background-size: cover;
     position: absolute;
     right: 72%;
@@ -143,57 +149,188 @@ a {
     text-indent: -10000px;
 }
 
-.menu {
+/*-----------------------------------------------------------*/
+
+.main_menu {
     width: 50%;
-    height: 100px;
+    height: 99px;
     position: absolute;
     top: 0;
     right: 25%;
     left: 25%;
     bottom: 0;
     /*
+    border: 1px solid black;
     width: auto;
     height: 99px;
     ;*/
 }
 
-/*
-#header_main_menu .menu_list {
-    width: auto;
-    height: 99px;
-    text-align: center;
-}
-*/
 .menu_list {
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
-/* li */
-.menu1 {
+.menu {
     float: left;
-    width: auto;
+    /*width: auto;*/
     height: 99px;
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
     text-align: center;
+    /*border: 1px solid green;*/
 }
 
 /* 글자색 - 47/28/17 = #2f1c11
  * line-height를 height와 같은 크기로 지정하면 텍스트가 세로로 중앙정렬이 된다.
  */
-.menu1>a {
+.menu>a {
     display: block;
-    width: auto;
+    /*width: auto;*/
     height: 99px;
-    padding: 0 32px;
+    padding: 0 20px;
     margin: 0;
     color: #2f1c11;
     font-size: 13.5px;
     font-weight: bold;
     letter-spacing: 0.5px;
     line-height: 99px;
+    /* border: 1px solid green; */
 }
 
-#header_main_menu .menu_list .menu1>a:hover {
+.menu>a:hover {
+    color: #cf661a;
+}
+
+/*-----------------------------------------------------------*/
+
+/* 각 메뉴 제목 위치 지정 */
+.menu1 {
+    position: fixed;
+    width: 150px;
+}
+
+.menu2 {
+    position: relative;
+    left: 150px;
+    width: 170px;
+}
+
+.menu3 {
+    position: relative;
+    left: 130px;
+    width: 110px;
+}
+
+.menu4 {
+    position: relative;
+    left: 110px;
+    width: 110px;
+}
+
+.menu5 {
+    position: relative;
+    left: 90px;
+    width: 200px;
+}
+
+/*-----------------------------------------------------------*/
+.clear {
+    float: none;
+    clear: both;
+}
+
+/*=====================================================*/
+
+/** 서브 메뉴 **/
+.sub_menu {
+    background-color: #eeeeee;
+    text-align: left;
+    margin: 0;
+}
+
+/* 서브 메뉴 글자색 지정 */
+.sub_menu a {
+    color: #2f1c11;
+    font-family: "Archer-Semibold", "NanumBarunGothic";
+}
+
+/*-----------------------------------------------------------*/
+
+/* 각 서브 메뉴 마다 크기, 위치 조정 */
+.sub_menu1 {
+    width: 1000px;
+    height: 270px;
+    position: relative;
+    top: -1px;
+    right: 180px;
+    padding: 45px 40px;
+    padding-right: 220px;
+    display: none;
+}
+
+.sub_menu2 {
+    width: 500px;
+    height: 130px;
+    position: relative;
+    top: -1px;
+    padding: 45px 40px;
+    display: none;
+}
+
+.sub_menu3 {
+    width: 800px;
+    height: 250px;
+    position: relative;
+    top: -1px;
+    right: 100px;
+    padding: 45px 40px;
+    display: none;
+}
+
+.sub_menu4 {
+    width: 80px;
+    height: 50px;
+    position: relative;
+    top: -1px;
+    padding: 45px 40px;
+    display: none;
+}
+
+.sub_menu5 {
+    width: 1100px;
+    height: 130px;
+    position: relative;
+    top: -1px;
+    right: 600px;
+    padding: 45px 40px;
+    display: none;
+}
+
+/*-----------------------------------------------------------*/
+
+.sub_menu_item {
+    float: left;
+    width: 190px;
+    height: 70px;
+    /*border: 1px solid red;*/
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.sub_menu_title {
+    display: inline-block;
+    font-size: 14.5px;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+
+.sub_menu_list {
+    display: inline-block;
+    font-size: 12.5px;
+    word-spacing: 2px;
+    margin-bottom: 7px;
+}
+
+.sub_menu_col>a {
     color: #cf661a;
 }
