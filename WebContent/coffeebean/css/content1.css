@@ -1,0 +1,82 @@
+#content1 {
+    width: auto;
+    height: 500px;
+    margin: 70px 0;
+    padding: 20px 0;
+    background-color: white;
+    text-align: center;
+}
+
+#content1>h2 {
+    font-family: "Archer-Semibold", "NanumBarunGothic";
+    font-size: 23px;
+    font-weight: 500;
+    color: #cf661a;
+}
+
+.slider_div {
+    width: 1300px;
+    height: 450px;
+    margin: 70px auto;
+    /*background-color: skyblue; */
+}
+
+.slider_product {
+    font-family: "NanumBarunGothicBold", "Helvetica";
+    /*overflow: hidden;*/
+}
+
+.product {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.product_link {
+    display: block;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+
+.product_img {
+    width: auto;
+    height: auto;
+}
+
+.product_img:hover {
+    opacity: 0.8;
+}
+
+.product_name {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    color: black;
+    margin: 10px 0;
+}
+
+.mini_name {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.product_price {
+    font-size: 15px;
+    color: #cf661a;
+    margin-bottom: 10px;
+}
+
+.origin_price {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 10px;
+    text-decoration: line-through;
+}
+
+.sold_out {
+    padding-left: 120px;
+}

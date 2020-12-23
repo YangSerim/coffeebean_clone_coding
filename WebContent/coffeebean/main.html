@@ -17,6 +17,18 @@
     <!-- CSS 파일 참조 처리 -->
     <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/main_banner.css" />
+    <link rel="stylesheet" type="text/css" href="css/content1.css" />
+    <link rel="stylesheet" type="text/css" href="css/content2.css" />
+    <link rel="stylesheet" type="text/css" href="css/content3.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="plugin/slick-master/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="plugin/slick-master/slick/slick-theme.css" />
+    <style type="text/css">
+    /*
+    .slick-dots li button:before {
+        background-
+    }*/
+    </style>
 </head>
 
 <body>
@@ -29,7 +41,7 @@
                     <li class="top_menu"><a href="#">채용정보</a></li>
                     <li class="top_menu"><a href="#">단체 및 기업구매</a></li>
                     <li class="top_menu"><a href="#">고객서비스</a></li>
-                    <li class="top_menu"><a href="#"><img src="img/header1.png" /></a></li>
+                    <li class="top_menu"><a href="#"><img src="img/header.png" /></a></li>
                 </ul>
             </div>
             <div id="header_main_menu">
@@ -227,22 +239,27 @@
                                 </div>
                             </div>
                         </div>
-                        <!--
-                        <div class="menu6"><a href="#">CBTL</a></div>
-                    -->
+                        <div class="menu menu6">
+                            <a href="#">CBTL</a>
+                            <div class="sub_menu sub_menu6">
+                                <a href="#" class="sub_menu_title">CBTL 가이드</a>
+                                <a href="#" class="sub_menu_title">CBTL 서비스</a>
+                                <a href="#" class="sub_menu_title">AS 안내</a>
+                                <a href="#" class="sub_menu_title">AS 신청</a>
+                                <a href="#" class="sub_menu_title">CBTL FAQ</a>
+                                <a href="#" class="sub_menu_title">제품설명서</a>
+                                <a href="#" class="sub_menu_title">기업용 머신</a>
+                            </div>
+                        </div>
                     </div>
-                    <!--
-                    <ul class="menu_list">
-                        <li class="menu"><a href="#">BUY ONLINE</a></li>
-                        <li class="menu"><a href="#">MEMBER'S CLUB</a></li>
-                        <li class="menu"><a href="#">MENU</a></li>
-                        <li class="menu"><a href="#">STORE</a></li>
-                        <li class="menu"><a href="#">THE COFFEE BEAN</a></li>
-                        <li class="menu"><a href="#">CBTL</a></li>
-                    </ul>
-                -->
                 </div>
-                <div class="search"><a href="#">검색</a></div>
+                <div class="search">
+                    <a href="#"><img src="img/header_search1.png"></a>
+                    <div class="search_over">
+                        <input type="text" name="search_area" class="search_area" />
+                        <a href="#"><img src="img/header_search1.png"></a>
+                    </div>
+                </div>
                 <div class="clear"></div>
             </div>
         </div>
@@ -254,13 +271,267 @@
                 <a href="#" class="main2">lucky day event</a>
             </div>
         </div>
-        <div id="content1"></div>
-        <div id="content2"></div>
-        <div id="content3"></div>
-        <div id="footer"></div>
+        <div id="content1">
+            <h2>MD'S PICK</h2>
+            <div class="slider_div">
+                <div class="slider_product">
+                    <div class="product">
+                        <a href="#" class="product_link">
+                            <div class="product_img"><img src="img/content1_1.jpg" /></div>
+                            <div class="product_name">
+                                <h3>[1+1]커피빈 드립백(디카페인) 5개입</h3>
+                            </div>
+                            <div class="product_price">5,900원</div>
+                            <div class="sold_out"><img src="img/icon_soldout.gif" /></div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#" class="product_link">
+                            <div class="product_img"><img src="img/content1_2.jpg" /></div>
+                            <div class="product_name">
+                                <h3>[1+1]커피빈 드립백(모카자바 블랜드) 5개입</h3>
+                            </div>
+                            <div class="product_price">5,900원</div>
+                            <div class="sold_out"><img src="img/icon_soldout.gif" /></div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#" class="product_link">
+                            <div class="product_img"><img src="img/content1_3.jpg" /></div>
+                            <div class="product_name">
+                                <h3>[1+1]커피빈 드립백(콜롬비아 다크) 5개입</h3>
+                            </div>
+                            <div class="product_price">5,900원</div>
+                            <div class="sold_out"><img src="img/icon_soldout.gif" /></div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#" class="product_link">
+                            <div class="product_img"><img src="img/content1_4.jpg" /></div>
+                            <div class="product_name">
+                                <h3>[-20% OFF]커피빈 헤이즐넛 라떼 파우치(10개입)</h3>
+                            </div>
+                            <div class="origin_price">15,000원</div>
+                            <div class="product_price">12,000원</div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#" class="product_link">
+                            <div class="product_img"><img src="img/content1_5.jpg" /></div>
+                            <div class="product_name">
+                                <h3>[1+1]초코시나몬 크래커</h3>
+                            </div>
+                            <div class="mini_name">초코시나몬 크래커</div>
+                            <div class="product_price">2,800원</div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#" class="product_link">
+                            <div class="product_img"><img src="img/content1_6.jpg" /></div>
+                            <div class="product_name">
+                                <h3>[1+1]얼그레이 크래커</h3>
+                            </div>
+                            <div class="mini_name">얼그레이 크래커</div>
+                            <div class="product_price">2,800원</div>
+                            <div class="sold_out"><img src="img/icon_soldout.gif" /></div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#" class="product_link">
+                            <div class="product_img"><img src="img/content1_7.jpg" /></div>
+                            <div class="product_name">
+                                <h3>커피빈 더블샷 라떼 30T</h3>
+                            </div>
+                            <div class="mini_name">커피빈 더블샷 라떼 (14.3g*30T)</div>
+                            <div class="product_price">14,000원</div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#" class="product_link">
+                            <div class="product_img"><img src="img/content1_8.jpg" /></div>
+                            <div class="product_name">
+                                <h3>커피빈 카페 라떼 30T</h3>
+                            </div>
+                            <div class="mini_name">커피빈 카페 라떼 (14g*30T)</div>
+                            <div class="product_price">13,000원</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content2">
+            <h2>What's new</h2>
+            <div class="slider_div">
+                <div class="slider_new_product">
+                    <div class="new_product">
+                        <a href="#" class="new_product_link">
+                            <div class="new_product_img"><img src="img/content2_1.jpg" /></div>
+                            <div class="new_product_name">2020 12 Amazing Christmas</div>
+                        </a>
+                    </div>
+                    <div class="new_product">
+                        <a href="#" class="new_product_link">
+                            <div class="new_product_img"><img src="img/content2_2.jpg" /></div>
+                            <div class="new_product_name">2020 12 Black Cookie Cake</div>
+                        </a>
+                    </div>
+                    <div class="new_product">
+                        <a href="#" class="new_product_link">
+                            <div class="new_product_img"><img src="img/content2_3.jpg" /></div>
+                            <div class="new_product_name">2020 12 Strawberry Cheese Baumkuchen</div>
+                        </a>
+                    </div>
+                    <div class="new_product">
+                        <a href="#" class="new_product_link">
+                            <div class="new_product_img"><img src="img/content2_4.jpg" /></div>
+                            <div class="new_product_name">2020 12 Pasta</div>
+                        </a>
+                    </div>
+                    <div class="new_product">
+                        <a href="#" class="new_product_link">
+                            <div class="new_product_img"><img src="img/content2_5.jpg" /></div>
+                            <div class="new_product_name">2020 12 Happy Holidays To You</div>
+                        </a>
+                    </div>
+                    <div class="new_product">
+                        <a href="#" class="new_product_link">
+                            <div class="new_product_img"><img src="img/content2_6.jpg" /></div>
+                            <div class="new_product_name">2020 11 Mexican Bulgogi Brrito</div>
+                        </a>
+                    </div>
+                    <div class="new_product">
+                        <a href="#" class="new_product_link">
+                            <div class="new_product_img"><img src="img/content2_7.jpg" /></div>
+                            <div class="new_product_name">2020 11 Holiday MD</div>
+                        </a>
+                    </div>
+                    <div class="new_product">
+                        <a href="#" class="new_product_link">
+                            <div class="new_product_img"><img src="img/content2_8.jpg" /></div>
+                            <div class="new_product_name">2020 11 Kahlua Espresso Martini</div>
+                        </a>
+                    </div>
+                    <div class="new_product">
+                        <a href="#" class="new_product_link">
+                            <div class="new_product_img"><img src="img/content2_9.jpg" /></div>
+                            <div class="new_product_name">2020 11 Cookie Butter Drinks</div>
+                        </a>
+                    </div>
+                    <div class="new_product">
+                        <a href="#" class="new_product_link">
+                            <div class="new_product_img"><img src="img/content2_10.jpg" /></div>
+                            <div class="new_product_name">2020 11 Baton Sucre with Almond Chocolate</div>
+                        </a>
+                    </div>
+                    <div class="new_product">
+                        <a href="#" class="new_product_link">
+                            <div class="new_product_img"><img src="img/content2_11.jpg" /></div>
+                            <div class="new_product_name">2020 11 Holiday Tea</div>
+                        </a>
+                    </div>
+                    <div class="new_product">
+                        <a href="#" class="new_product_link">
+                            <div class="new_product_img"><img src="img/content2_12.jpg" /></div>
+                            <div class="new_product_name">2020 10 Matcha Red Bean Roll Cake</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content3">
+            <div class="insta_title">
+                #커피빈코리아 #커피빈맛있다 #커피빈사랑해
+            </div>
+            <div class="insta_list">
+                <ul class="insta">
+                    <li class="insta_img"><a href="#"><img src="img/content3_1.jpg" /></a></li>
+                    <li class="insta_img"><a href="#"><img src="img/content3_2.jpg" /></a></li>
+                    <li class="insta_img"><a href="#"><img src="img/content3_3.jpg" /></a></li>
+                    <li class="insta_img"><a href="#"><img src="img/content3_4.jpg" /></a></li>
+                    <li class="insta_img"><a href="#"><img src="img/content3_5.jpg" /></a></li>
+                    <li class="insta_img"><a href="#"><img src="img/content3_6.jpg" /></a></li>
+                    <li class="insta_img"><a href="#"><img src="img/content3_7.jpg" /></a></li>
+                    <li class="insta_img"><a href="#"><img src="img/content3_8.jpg" /></a></li>
+                    <li class="insta_img"><a href="#"><img src="img/content3_8.jpg" /></a></li>
+                    <li class="insta_img"><a href="#"><img src="img/content3_9.jpg" /></a></li>
+                    <li class="insta_img"><a href="#"><img src="img/content3_10.jpg" /></a></li>
+                    <li class="insta_img"><a href="#"><img src="img/content3_11.jpg" /></a></li>
+                </ul>
+            </div>
+            <div class="insta_btn">
+                <a href="#"><img src="img/insta_btn.png" /></a>
+            </div>
+        </div>
+        <div id="footer">
+            <img src="img/btn_top.png" class="btn_top" />
+            <div class="footer_menu">
+                <ul class="footer_menu_list">
+                    <h3>Buy Online</h3>
+                    <li class="footer_menu_item"><a href="#">VIEW ALL</a></li>
+                    <li class="footer_menu_item"><a href="#">커피</a></li>
+                    <li class="footer_menu_item"><a href="#">티</a></li>
+                    <li class="footer_menu_item"><a href="#">CBLT 시스템</a></li>
+                    <li class="footer_menu_item"><a href="#">상품</a></li>
+                </ul>
+                <ul class="footer_menu_list">
+                    <h3>Member's Club</h3>
+                    <li class="footer_menu_item"><a href="#">커피빈 멤버스 클럽</a></li>
+                    <li class="footer_menu_item"><a href="#">나의 커피빈</a></li>
+                </ul>
+                <ul class="footer_menu_list">
+                    <h3>Menu</h3>
+                    <li class="footer_menu_item"><a href="#">음료</a></li>
+                    <li class="footer_menu_item"><a href="#">푸드</a></li>
+                    <li class="footer_menu_item"><a href="#">상품</a></li>
+                    <li class="footer_menu_item"><a href="#">카드 시스템</a></li>
+                </ul>
+                <ul class="footer_menu_list">
+                    <h3>Store</h3>
+                    <li class="footer_menu_item"><a href="#">매장 찾기</a></li>
+                    <li class="footer_menu_item"><a href="#">신규 매장</a></li>
+                </ul>
+                <ul class="footer_menu_list">
+                    <h3>The Coffee Bean</h3>
+                    <li class="footer_menu_item"><a href="#">커피빈 코리아</a></li>
+                    <li class="footer_menu_item"><a href="#">커피빈 소식</a></li>
+                    <li class="footer_menu_item"><a href="#">사회공헌</a></li>
+                    <li class="footer_menu_item item_bold"><a href="#">제휴 마케팅 제안</a></li>
+                    <li class="footer_menu_item"><a href="#">채용안내</a></li>
+                    <li class="footer_menu_item"><a href="#">신규 입점 제의</a></li>
+                    <li class="footer_menu_item"><a href="#">결산공고</a></li>
+                </ul>
+                <ul class="footer_menu_list">
+                    <h3>CBTL</h3>
+                    <li class="footer_menu_item"><a href="#">CBTL 가이드</a></li>
+                    <li class="footer_menu_item"><a href="#">CBTL 서비스</a></li>
+                    <li class="footer_menu_item"><a href="#">AS 안내</a></li>
+                    <li class="footer_menu_item"><a href="#">AS 신청</a></li>
+                    <li class="footer_menu_item"><a href="#">CBLT FAQ</a></li>
+                    <li class="footer_menu_item"><a href="#">제품설명서</a></li>
+                    <li class="footer_menu_item"><a href="#">기업용 머신</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <div class="service">홈페이지 이용약관 | 개인정보처리방침 | 영상정보처리기기운영방침 | 멤버스카드이용약관 | 위치기반서비스 이용약관</div>
+                <div class="page_info">
+                    (주)커피빈코리아 대표이사 박상배 | 사업자등록번호 120-86-07029 | 통신판매업신고 제 2010-서울강남-00560</br>
+                    서울시 강남구 봉은사로 99길 7 | 고객센터 02-1577-4708 (09:00 - 18:00) | E-mail:cbk@coffeebeankorea.com</br>
+                    호스팅사업자:SK브로드밴드</br>
+                    ©2016. The Coffee Bean. All rights reserved.
+                </div>
+                <div class="sns_icon">
+                    <a href="#"><img src="img/ico_facebook.png" /></a>
+                    <a href="#"><img src="img/ico_instagram.png" /></a>
+                    <a href="#"><img src="img/ico_blog.png" /></a>
+                    <a href="#"><img src="img/ico_twitter.png" /></a>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="plugin/slick-master/slick/slick.js"></script>
     <script type="text/javascript">
+    /** 드롭다운 서브메뉴 구현 **/
     $(function() {
         $(".menu").hover(
             function(e) {
@@ -268,8 +539,75 @@
             },
             function(e) {
                 $(this).find(".sub_menu").stop().fadeOut(20);
+            });
+        $(".search>a>img").click(function() {
+            var image = $(this).attr('src');
+
+            if (image == 'img/header_search1.png') {
+                $(this).attr('src', 'img/ico_search_close.png');
+                $(".search_over").stop().slideDown(500);
+            } else {
+                $(this).attr('src', 'img/header_search1.png');
+                $(".search_over").stop().slideUp(500);
             }
-        );
+
+        });
+    });
+
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $('.btn_top').fadeIn();
+            } else {
+                $('.btn_top').fadeOut();
+            }
+        });
+
+        $('.btn_top').click(function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 400);
+            return false;
+        });
+    });
+
+    /** slick 활용하여 slider 구현 **/
+    $(function() {
+        $(".slider_product").slick({
+            slide: 'div', //슬라이드 되어야할 태그
+            infinite: true, //무한 반복 옵션
+            slidesToShow: 4, //한 화면에 보여질 컨텐츠 개수
+            slidesToScroll: 4, //스크롤 한번에 움직일 컨텐츠 개수
+            speed: 1000, //다음 버튼 누르고 다음 화면 뜨는데 까지 걸리는 시간
+            arrows: false, //옆으로 이동하는 화살표 효시 여부
+            dots: true, //스크롤바 아래 점으로 페이지네이션 여부
+            autoplay: true, //자동 스크롤 사용 여부
+            autoplaySpeed: 8000, //자동 스크롤 시 다음으로 넘어가는데 걸리는 시간
+            pauseOnHover: false, //슬라이드 이동 시 마우스 호버하면 슬라이더 멈춤
+            vertical: false, //세로 방향 슬라이드 옵션
+            //prevArrow: "<button type='button' class='slick-prev'>Previous</button>",
+            //nextArrow: "<button type='button' class='slick-next'>Next</button>",
+            //dotsClass: 'slick-dots', //아래 나오는 페이지네이션(점) css class 지정
+            draggable: false //드래그 가능 여부
+        });
+
+        $(".slider_new_product").slick({
+            slide: 'div', //슬라이드 되어야할 태그
+            infinite: true, //무한 반복 옵션
+            slidesToShow: 3, //한 화면에 보여질 컨텐츠 개수
+            slidesToScroll: 3, //스크롤 한번에 움직일 컨텐츠 개수
+            speed: 1000, //다음 버튼 누르고 다음 화면 뜨는데 까지 걸리는 시간
+            arrows: false, //옆으로 이동하는 화살표 효시 여부
+            dots: true, //스크롤바 아래 점으로 페이지네이션 여부
+            autoplay: true, //자동 스크롤 사용 여부
+            autoplaySpeed: 8000, //자동 스크롤 시 다음으로 넘어가는데 걸리는 시간
+            pauseOnHover: false, //슬라이드 이동 시 마우스 호버하면 슬라이더 멈춤
+            vertical: false, //세로 방향 슬라이드 옵션
+            //prevArrow: "<button type='button' class='slick-prev'>Previous</button>",
+            //nextArrow: "<button type='button' class='slick-next'>Next</button>",
+            //dotsClass: 'slick-dots', //아래 나오는 페이지네이션(점) css class 지정
+            draggable: false //드래그 가능 여부
+        });
     });
     </script>
 </body>
