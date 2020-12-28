@@ -6,6 +6,7 @@
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 /** 헤더 영역 **/
@@ -27,6 +28,71 @@ a {
 }
 
 /*=====================================================*/
+/** 로그인 & 회원가입 **/
+
+/* 로그인 & 회원가입 창
+ * display: none; -> 버튼 클릭 시 보임
+ */
+.login_signup {
+    width: auto;
+    height: 90px;
+    background-color: #2f1c11;
+    padding: 20px 30px;
+    display: none;
+}
+
+/* 텍스트 스타일 지정 */
+.login_signup>span {
+    color: white;
+    font-size: 19px;
+    position: relative;
+    top: 20px;
+    left: 300px;
+}
+
+/* 특정 텍스트 색,굵기 다르게 지정 */
+.text_color {
+    color: #cf661a;
+    font-weight: 700;
+}
+
+/* 로그인 버튼
+ * outline,border: none; -> 클릭 시 테두리 없음
+ */
+.login_btn {
+    background: url('../img/login_btn.png') no-repeat;
+    width: 170px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: auto;
+    position: relative;
+    left: 550px;
+    top: 17px;
+    text-indent: -10000px;
+    text-align: center;
+}
+
+/* 회원가입 버튼
+ * outline,border: none; -> 클릭 시 테두리 없음
+ */
+.signup_btn {
+    background: url('../img/signup_btn.png') no-repeat;
+    width: 172px;
+    height: 38px;
+    border: none;
+    outline: none;
+    position: relative;
+    left: 550px;
+    top: 20px;
+    text-indent: -10000px;
+}
+
+.login_signup>button:hover {
+    cursor: pointer;
+}
+
+/*=====================================================*/
 
 /** 상단바 메뉴 **/
 
@@ -35,23 +101,13 @@ a {
     width: auto;
     height: 40px;
     text-align: right;
-    /*vertical-align: middle;*/
     background-color: #eeeeee;
-    /*position: relative;*/
     margin: 0;
     padding: 0;
 }
 
 /* ul */
 .header_top {
-    /*
-    width: 100%;
-    height: 40px;
-    position: absolute;
-    right: 17.5%;
-    top: 0;
-    border: 1px solid red;
-    */
     width: auto;
     height: 40px;
     padding-right: 333px;
@@ -59,18 +115,20 @@ a {
 
 /* li
  * inline은 한 줄에 모든 리스트를 위치시키기 위해 사용
-   각 li 마다 간격 조정위해 margin사용
+ * 각 li 마다 간격 조정위해 margin사용
  */
 .top_menu {
     display: inline-block;
     width: auto;
     height: 40px;
-    /*float: left; */
-    /*width: 14.5%; */
     margin: 0 7.5px 0 7.5px;
     vertical-align: middle;
 }
 
+/*
+ * 상단바 각 메뉴
+ * 글자색, 굵기, 위치, 크기 지정
+ */
 .top_menu>a {
     display: inline-block;
     width: auto;
@@ -83,7 +141,8 @@ a {
 }
 
 /* 로그인 옆에 '|' 표시
-   padding으로 간격 조정 */
+ * padding으로 간격 조정
+ */
 .top_menu:first-child {
     border-right: 1px solid #dddddd;
     padding: 0 20px;
@@ -91,8 +150,9 @@ a {
 
 /*=====================================================*/
 
-/** 메인 메뉴 **/
+/** 상단 메인 **/
 
+/* 상단 메인 영역 : 로고영역 + 메인메뉴영역 + 검색영역 */
 #header_main_menu {
     width: auto;
     height: 99px;
@@ -100,19 +160,19 @@ a {
     margin: 0;
     background-color: white;
     position: relative;
-    z-index: 10;
-    /*text-align: center;*/
+    /*z-index: 10;*/
 }
 
-/* 로고 */
+/* 로고영역 */
 .logo {
     width: 25%;
     height: 100px;
 }
 
-/* inline-block로 크기 지정할 수 있도록 함
- * loge색 - 78/42/26
-*/
+/* 로고 이미지 링크
+ * inline-block -> 크기 지정
+ * cover -> 영역에 꽉차도록 지정
+ */
 .logo>a {
     display: inline-block;
     width: 76px;
@@ -125,9 +185,7 @@ a {
     text-indent: -10000px;
 }
 
-/*-----------------------------------------------------------*/
-
-/* 검색 */
+/* 검색영역 */
 .search {
     width: 25%;
     height: 100px;
@@ -137,19 +195,19 @@ a {
     bottom: 0;
 }
 
-
+/* 검색 버튼 */
 .search>a {
     display: inline-block;
     width: 20px;
     height: 20px;
-    /* background: url("../img/header_search1.png") no-repeat;
-    background-size: cover;*/
     position: absolute;
     right: 73%;
     top: 35px;
-    /*text-indent: -10000px;*/
 }
 
+/* 검색 버튼 클릭 시 나오는 영역
+ * z-index: 80; -> 서브메뉴 다음으로 보이도록 지정
+ */
 .search_over {
     width: 1250px;
     height: 70px;
@@ -164,18 +222,21 @@ a {
     z-index: 80;
 }
 
+/* 검색 창
+ * border: none; -> 클릭 전까지 테두리 보이지 않음
+ */
 .search_area {
     width: 1100px;
     height: 30px;
     border: auto;
     margin: 18px 40px 0 40px;
     background-color: #eeeeee;
-    border: 2px solid black;
+    border: none;
+    border-radius: 10px;
     text-align: center;
 }
 
-/*-----------------------------------------------------------*/
-
+/* 메인 메뉴 영역  */
 .main_menu {
     width: 50%;
     height: 99px;
@@ -184,34 +245,28 @@ a {
     right: 25%;
     left: 25%;
     bottom: 0;
-    /*
-    border: 1px solid black;
-    width: auto;
-    height: 99px;
-    ;*/
 }
 
+/* 메인 메뉴 리스트 */
 .menu_list {
     margin-left: 55px;
 }
 
+/* 각 메뉴 공통 스타일 지정 */
 .menu {
     float: left;
-    /*width: auto;*/
     height: 99px;
     margin: 0;
     padding: 0 10px;
     text-align: center;
     z-index: 90;
-    /*border: 1px solid green;*/
 }
 
-/* 글자색 - 47/28/17 = #2f1c11
- * line-height를 height와 같은 크기로 지정하면 텍스트가 세로로 중앙정렬이 된다.
+/* block -> 각 메뉴 자체를 링크로 지정
+ * line-height -> height와 같은 값줘서 세로 중앙 정렬
  */
 .menu>a {
     display: block;
-    /*width: auto;*/
     height: 99px;
     padding: 0 20px;
     margin: 0;
@@ -220,16 +275,14 @@ a {
     font-weight: bold;
     letter-spacing: 0.5px;
     line-height: 99px;
-    /* border: 1px solid green; */
 }
 
+/* 각 메뉴 마우스 오버시 글자 색 변환 */
 .menu>a:hover {
     color: #cf661a;
 }
 
-/*-----------------------------------------------------------*/
-
-/* 각 메뉴 제목 위치 지정 */
+/* 각 메뉴 위치 지정 */
 .menu1 {
     position: fixed;
     width: 150px;
@@ -265,7 +318,6 @@ a {
     width: 110px;
 }
 
-/*-----------------------------------------------------------*/
 .clear {
     float: none;
     clear: both;
@@ -280,15 +332,15 @@ a {
     margin: 0;
 }
 
-/* 서브 메뉴 글자색 지정 */
+/* 서브 메뉴 글자 스타일 */
 .sub_menu a {
     color: #2f1c11;
     font-family: "Archer-Semibold", "NanumBarunGothic";
 }
 
-/*-----------------------------------------------------------*/
-
-/* 각 서브 메뉴 마다 크기, 위치 조정 */
+/* 각 서브 메뉴 마다 크기, 위치 조정
+ * diplay:none; -> 마우스 오버시 보임
+ */
 .sub_menu1 {
     width: 1000px;
     height: 270px;
@@ -347,17 +399,16 @@ a {
     display: none;
 }
 
-/*-----------------------------------------------------------*/
-
+/* 서브 메뉴 내용 = 타이틀 + 리스트 */
 .sub_menu_item {
     float: left;
     width: 190px;
     height: 70px;
-    /*border: 1px solid red;*/
     margin-bottom: 5px;
     margin-right: 10px;
 }
 
+/* 서브메뉴 타이틀 */
 .sub_menu_title {
     display: inline-block;
     font-size: 14.5px;
@@ -365,6 +416,7 @@ a {
     margin-bottom: 10px;
 }
 
+/* 서브메뉴 리스트 */
 .sub_menu_list {
     display: inline-block;
     font-size: 12.5px;
@@ -372,6 +424,7 @@ a {
     margin-bottom: 7px;
 }
 
+/* 서브메뉴 리스트 중 특정 리스트만 다른 색상 지정 */
 .sub_menu_col>a {
     color: #cf661a;
 }

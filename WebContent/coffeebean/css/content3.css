@@ -1,3 +1,4 @@
+/** content3 전체 영역  **/
 #content3 {
     width: auto;
     height: 550px;
@@ -7,6 +8,7 @@
     margin-bottom: 0;
 }
 
+/* content3 타이틀 */
 .insta_title {
     font-family: "NanumBarunGothic", "Helvetica";
     color: white;
@@ -16,12 +18,16 @@
     letter-spacing: -1px;
 }
 
+/* 이미지 박스 전체 영역 */
 .insta_list {
     width: 1200px;
     height: 420px;
     margin: 20px auto;
 }
 
+/* 각 이미지 박스 영역
+ * overflow : hidden; -> 이미지가 확대되어도  해당 영역에서 벗어나지 않도록 지정
+ */
 .insta_img {
     float: left;
     width: 200px;
@@ -29,10 +35,15 @@
     overflow: hidden;
 }
 
+/* 각 이미지 마우스 오버시 투명도 변환 */
 .insta_img:hover {
     opacity: 0.8;
 }
 
+/* 각 이미지 박스
+ * transform : scale(1); -> 원래 크기로 지정
+ * transition -> 변환 시 걸리는 시간 지정
+ */
 .insta_img>a>img {
     background-size: cover;
     width: 200px;
@@ -50,6 +61,7 @@
     transition: .3s;
 }
 
+/* 각 이미지 박스에 마우스 오버시 확대 */
 .insta_img:hover>a>img {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -58,6 +70,7 @@
     transform: scale(1.1);
 }
 
+/* 인스타그램 버튼 */
 .insta_btn {
     margin: 50px auto;
 }

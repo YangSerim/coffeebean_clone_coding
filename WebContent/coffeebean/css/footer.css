@@ -1,11 +1,18 @@
+/** 하단 영역 **/
+
+/* top 버튼
+ * display: none -> 처음 페이지 열릴 때 보이지 않게 설정
+ */
 .btn_top {
     position: fixed;
     right: 3em;
     bottom: 4em;
     cursor: pointer;
     z-index: 100;
+    display: none;
 }
 
+/* 하단 전체 영역 */
 #footer {
     width: auto;
     height: 500px;
@@ -13,6 +20,7 @@
     margin: 0;
 }
 
+/* 하단 메뉴 전체 영역 */
 .footer_menu {
     width: 1200px;
     height: 300px;
@@ -20,6 +28,7 @@
     border-bottom: 1px solid #2f1c11;
 }
 
+/* 각 하단 메뉴 영역 */
 .footer_menu_list {
     float: left;
     width: auto;
@@ -28,12 +37,14 @@
     margin-right: 110px;
 }
 
+/* 각 하단 메뉴 타이틀 */
 .footer_menu_list>h3 {
     color: #cf661a;
     font-size: 16px;
     margin-bottom: 15px;
 }
 
+/* 각 하단 메뉴 리스트 */
 .footer_menu_list>li>a {
     display: inline-block;
     color: #2f1c11;
@@ -42,10 +53,12 @@
 
 }
 
+/* 하단 메뉴 리스트 중 특정 텍스트 굵기 다르게 지정 */
 .item_bold {
     font-weight: bold;
 }
 
+/* 하단 이용약관 + 페이지 정보 전체 영역 */
 .info {
     width: 1200px;
     height: 180px;
@@ -57,15 +70,32 @@
     word-spacing: 4px;
 }
 
+/* 이용약관 전체 영역 */
 .service {
     margin: 40px 0 30px 0;
 }
 
-.page_info {
+/* 각 이용약관 영역 */
+.service>li {
+    display: inline;
+}
 
+/* 각 이용약관 글자색 지정 */
+.service>li>a {
+    color: #2f1c11;
+}
+
+/* 두번째 이용약관 글자색 다르게 지정 */
+.service>li:nth-child(2)>a {
+    color: #cf661a;
+}
+
+/* 페이지 정보 전체 영역 */
+.page_info {
     line-height: 20px;
 }
 
+/* sns 아이콘 전체 영역 */
 .sns_icon {
     float: right;
     position: relative;
@@ -73,6 +103,7 @@
     margin: 0;
 }
 
+/* 각 sns 아이콘 간격 지정 */
 .sns_icon>a>img {
     margin: 0 6px;
 }

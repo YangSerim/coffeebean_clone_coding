@@ -1,28 +1,32 @@
-/** main 영역 **/
+/** 상단 배너 영역 **/
 
-/* padding-top으로 상단메뉴에 가려지지 않도록 위치 지정*/
+/* 상단 배너 전체 영역
+ * padding-top으로 상단메뉴에 가려지지 않도록 위치 지정
+ */
 #main_banner {
-    margin: 0;
+    margin: auto;
     padding-top: 140px;
-    width: 100%;
+    width: auto;
 }
 
+/* 첫번째 배너 영역 */
 #main_banner .main1 {
     display: block;
     background: url("../img/main_header01.jpg") no-repeat;
     width: auto;
     height: 540px;
-    margin: 0;
-    padding: 0;
-    text-indent: -100000px;
+    margin: auto;
+    padding: auto;
+    text-indent: -10000px;
 }
 
+/* 두번째 배너 영역 */
 #main_banner .main2 {
     display: block;
     background: url("../img/main_header02.jpg") no-repeat;
     width: auto;
     height: 400px;
-    margin: 0;
-    padding: 0;
-    text-indent: -100000px;
+    margin: auto;
+    padding: auto;
+    text-indent: -10000px;
 }

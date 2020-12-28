@@ -1,11 +1,13 @@
+/** content2 전체 영역 **/
 #content2 {
     width: auto;
     height: 600px;
-    margin: 70px 0;
+    margin: 170px 0;
     background-color: white;
     text-align: center;
 }
 
+/* 타이틀 */
 #content2>h2 {
     font-family: "Archer-Semibold", "NanumBarunGothic";
     font-size: 23px;
@@ -13,11 +15,12 @@
     color: #cf661a;
 }
 
+/* 슬라이더 전체 공통 폰트 지정 */
 .slider_new_product {
     font-family: "NanumBarunGothicBold", "Helvetica";
-    /*overflow: hidden;*/
 }
 
+/* 각 이벤트 영역 */
 .new_product {
     width: 390px;
     height: auto;
@@ -25,24 +28,29 @@
     text-align: center;
 }
 
+/* 각 이벤트 영역 안 링크 영역 */
 .new_product_link {
     display: block;
     width: 390px;
     height: auto;
     margin: auto;
+    outline: none;
     text-align: center;
 
 }
 
+/* 이벤트 이미지 */
 .new_product_img {
     height: auto;
     width: auto;
 }
 
+/* 이벤트 이미지 마우스 오버 시 투명도 조절 */
 .new_product_img:hover {
     opacity: 0.8;
 }
 
+/* 이벤트 타이틀 */
 .new_product_name {
     font-size: 17px;
     font-weight: 500;
