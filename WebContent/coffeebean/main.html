@@ -378,7 +378,7 @@
                 <a href="#" class="main2">lucky day event</a>
             </div>
         </div>
-        <!-- 상품 slick  -->
+        <!-- 상품 슬라이드  -->
         <div id="content1">
             <h2>MD'S PICK</h2>
             <div class="slider_div">
@@ -477,7 +477,7 @@
                 <button class="btn_controls pause1">pause1</button>
             </div>
         </div>
-        <!-- 이벤트 slick -->
+        <!-- 신상품 슬라이드 -->
         <div id="content2">
             <h2>What's new</h2>
             <div class="slider_div">
@@ -559,7 +559,7 @@
                 <button class="btn_controls pause2">pause2</button>
             </div>
         </div>
-        <!-- sns 블럭 -->
+        <!-- 인스타그램 목록 박스 -->
         <div id="content3">
             <div class="insta_title">
                 #커피빈코리아 #커피빈맛있다 #커피빈사랑해
@@ -662,6 +662,7 @@
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="plugin/slick-master/slick/slick.js"></script>
     <script type="text/javascript">
+    
     /** 로그인, 회원가입 버튼 구현 **/
     $(function() {
         $(".login_signup_btn>a>img").click(function() {
@@ -688,7 +689,7 @@
 
     /** 상단 메인메뉴 **/
     $(function() {
-        /* 메인메뉴 마우스 호버 시 드롭다운 */
+        /* 메인메뉴 마우스 오버 시 드롭다운 */
         $(".menu").hover(
             function(e) {
                 $(this).find(".sub_menu").stop().fadeIn(400);
@@ -711,7 +712,7 @@
         });
     });
 
-    /** top메뉴 구현 **/
+    /** top버튼 구현 **/
     $(function() {
         $(window).scroll(function() {
             if ($(this).scrollTop() > 200) {
@@ -743,8 +744,6 @@
             autoplaySpeed: 4000, //자동 스크롤 시 다음으로 넘어가는데 걸리는 시간
             pauseOnHover: false, //슬라이드 이동 시 마우스 호버하면 슬라이더 멈춤
             vertical: false, //세로 방향 슬라이드 옵션
-            //prevArrow: "<button type='button' class='slick-prev'>Previous</button>",
-            //nextArrow: "<button type='button' class='slick-next'>Next</button>",
             dotsClass: 'slick-dots', //아래 나오는 페이지네이션(점) css class 지정
             draggable: false //드래그 가능 여부
         });
@@ -778,9 +777,7 @@
             autoplaySpeed: 4000, //자동 스크롤 시 다음으로 넘어가는데 걸리는 시간
             pauseOnHover: false, //슬라이드 이동 시 마우스 호버하면 슬라이더 멈춤
             vertical: false, //세로 방향 슬라이드 옵션
-            //prevArrow: "<button type='button' class='slick-prev'>Previous</button>",
-            //nextArrow: "<button type='button' class='slick-next'>Next</button>",
-            //dotsClass: 'slick-dots', //아래 나오는 페이지네이션(점) css class 지정
+            dotsClass: 'slick-dots', //아래 나오는 페이지네이션(점) css class 지정
             draggable: false //드래그 가능 여부
         });
 
